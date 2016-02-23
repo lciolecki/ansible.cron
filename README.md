@@ -35,6 +35,8 @@ lciolecki_crons:
 
 ```
 
+Supported cron options You can find on [http://docs.ansible.com/ansible/cron_module.html](http://docs.ansible.com/ansible/cron_module.html)
+
 License
 -------
 The MIT License (MIT)
