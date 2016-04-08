@@ -15,6 +15,6 @@
     user:         "{{ item.user|default(item.user|default(omit)) }}"
     state:        "{{ item.state|default('present') }}"
     special_time: "{{ item.special_time|default(omit) }}"
-  with_items: lciolecki_crons
+  with_items: "{{ lciolecki_crons }}"
   notify:
     - cron restart
