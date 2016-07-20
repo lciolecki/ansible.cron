@@ -16,5 +16,9 @@
     state:        "{{ item.state|default('present') }}"
     special_time: "{{ item.special_time|default(omit) }}"
   with_items: "{{ lciolecki_crons }}"
+  tags:
+    - system
+    - crontab
+    - cron
   notify:
     - cron restart
