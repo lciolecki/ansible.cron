@@ -12,7 +12,6 @@ Usage
 -----
 
 ```yaml
----
 - hosts: all
 
   roles:
@@ -26,13 +25,10 @@ Variables
 ---------
 
 ```yaml
----
-
 lciolecki_crons:
   - name: "Ping cron"
-	min: 15
+    min: 15
     job: "/sbin/ping -c 1 192.168.0.1 > /var/log/cron"
-
 ```
 
 Supported cron options You can find on [http://docs.ansible.com/ansible/cron_module.html](http://docs.ansible.com/ansible/cron_module.html)
